@@ -18,6 +18,6 @@ Sklearn version: 1.0.2
 
 The three models I have used are linear regression, decision trees and random forests. I transform the training set using the sklearn pipeline, 
 then run LinearRegressor(), RandomForestRegressor() and DecisionTreeRegressor(). After computing the root mean squared error (RMSE) for each and running
-10-fold cross-validation, I settle on the Random Forest Regressor. Then I run GridSearchCV to obtain max_features = 8 and n_estimators = 8. Code in line 595 gives
+10-fold cross-validation, I settle on the Random Forest Regressor. Then I run GridSearchCV to obtain max_features = 8 and n_estimators = 30. Code in line 595 gives
 an idea of the importance of individual features in determining median house value, and we can drop certain unimportant features. Finally, I test my final_model 
 against the test data and compute the RMSE score.
